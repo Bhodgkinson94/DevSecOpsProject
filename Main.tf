@@ -3,10 +3,10 @@ provider "aws" {
 }
 resource "aws_s3_bucket" "julytesting24" {
   bucket ="julytesting24"
-  }
+}
   terraform {
   backend "s3" {
-    # Replace this with your bucket name!
+    #Julytesting24
     bucket         = "julytesting24"
     key            = "global/s3/terraform.tfstate"
     region         = "eu-west-2"
