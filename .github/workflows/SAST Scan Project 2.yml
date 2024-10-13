@@ -16,9 +16,9 @@ jobs:
         with:
           python-version: 3.x
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3.26.12
+        uses: github/codeql-action/init@v3
       - name: Run CodeQL Analysis
-        uses: github/codeql-action/analyze@v3.26.12
+        uses: github/codeql-action/analyze@v3
 
 
 
