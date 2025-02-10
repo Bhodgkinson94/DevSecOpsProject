@@ -12,3 +12,13 @@ resource "aws_s3_bucket" "julytesting24" {
     region         = "eu-west-2"
   }
 }
+
+resource "aws_instance" "julytesting24" {
+
+  ami    = "ami-0cbf43fd299e3a464" 
+  instance_type = "t2.micro"
+  tags = {
+    Name = "julytesting24"
+   
+}
+}
